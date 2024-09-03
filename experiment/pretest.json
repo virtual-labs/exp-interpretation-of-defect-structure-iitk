@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The distance between diffraction spots in a SADP is inversely related to:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The wavelength of the incident electron beam",
+        "b": "The atomic number of the elements in the sample",
+        "c": "The real-space lattice spacing of the crystal",
+        "d": "The aperture size used in the TEM"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +15,33 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What does the presence of concentric rings in a SADP indicate?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A single crystalline structure",
+        "b": "An amorphous material",
+        "c": "A polycrystalline material",
+        "d": "A non-crystalline structure"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following statements is true about the effect of dislocations on TEM SADP?",
+      "answers": {
+        "a": "Dislocations lead to the broadening of diffraction spots.",
+        "b": "Dislocations result in the formation of ring patterns.",
+        "c": "Dislocations do not affect the SADP.",
+        "d": "Dislocations cause spot splitting in the SADP."
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
