@@ -5,10 +5,10 @@ Additionally, internal structure defects of the deformed parts, which are primar
 <image src="images\Picture1.png">
 <br>
 
-### **Figure 1.** Imaging conditions for dislocations with maximum and minimum gb product.
+**Figure 1.** Imaging conditions for dislocations with maximum and minimum gb product.
 <br>
 
 <image src="images\Picture2.png">
 <br>
 
-### **Figure 2.** (a) Bright field TEM images of strangled dislocations (b) Defect structures in Cu (c) Defect structures in Fe (d) Defect structures in Zn
+**Figure 2.** (a) Bright field TEM images of strangled dislocations (b) Defect structures in Cu (c) Defect structures in Fe (d) Defect structures in Zn
