@@ -2,7 +2,8 @@ var text;
 const typeSpeed = 60;
 
 var matSelected = 1;
-var timerId, typeTarget = $("#typer"),
+var timerId,
+    typeTarget = $("#typer"),
     tWrapper = $("#toast-wrapper"),
     ti = 0,
     currentStep = 0,
@@ -14,8 +15,8 @@ var timerId, typeTarget = $("#typer"),
     dropped = false,
     imgs = [],
     mode = 1,
-    removeButtonclicked=false,
-    inp=0;
+    removeButtonclicked = false,
+    inp = 0;
 
 let isImageYDropped = false; // Flag to track if image-y has been dropped
 
@@ -34,24 +35,31 @@ function type(txt, cur = 0) {
 }
 
 // text to speech function
+// text to speech function (updated)
 function textToSpeech(text) {
+    // Stop any ongoing speech immediately
+    window.speechSynthesis.cancel();
+
     var available_voices = window.speechSynthesis.getVoices();
     var english_voice = '';
+    
     for (var i = 0; i < available_voices.length; i++) {
-        if (available_voices[i].name.includes('Female')) { // Look for a voice with "Female" in its name
+        if (available_voices[i].lang.startsWith("en") && available_voices[i].name.includes("Female")) {
             english_voice = available_voices[i];
             break;
         }
     }
-    if (english_voice === '')
-        english_voice = available_voices[0];
-    var utter = new SpeechSynthesisUtterance();
+    if (english_voice === '') english_voice = available_voices[0];
+
+    var utter = new SpeechSynthesisUtterance(text);
+
     utter.rate = 1.1;
     utter.pitch = 0.9;
-    utter.text = text;
     utter.voice = english_voice;
+
     window.speechSynthesis.speak(utter);
 }
+
 if (window.speechSynthesis.getVoices().length == 0) {
     window.speechSynthesis.addEventListener('voiceschanged', function () {
         textToSpeech(text);
@@ -74,31 +82,19 @@ function strt() {
     $('#removeButton').prop("disabled", false);
 
     showToast("Remove the sample holder");
-    type("Now remove the holder, drag and drop the material, and place it into the machine");
-    textToSpeech("Now and remove and place the material on the holder and inser/place inside");
+    type("Now remove the holder, drag and drop the material, and place it into the machine.");
+    textToSpeech("Now remove the holder, drag and drop the material, and place it into the machine.");
 }
 
-// toast message function
+// toast message function (suppressed visually)
 function showToast(msg, type = 0) {
-    tWrapper.append(`<div id="t${ti++}" class="toast${type == 1 ? ' danger' : (type == 2 ? ' success' : '')}" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-        <svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="${type == 1 ? '#ff0000' : (type == 2 ? '#31a66a' : '#007aff')}" /></svg>
-        <strong class="mr-auto">Notification</strong>
-    </div>
-    <div class="toast-body">
-        ${msg}
-</div>
-</div>`);
-    $(`#t${ti - 1}`).toast({
-        delay: 5500
-    });
-    $(`#t${ti - 1}`).toast('show');
+    // Toast disabled — but flow continues
+    console.log("Toast suppressed:", msg);
 }
-// end of toast msg function
 
 $(function () {
-    type("Welcome to Observation and interpretation of defect structure in cold rolled aluminium,copper and Zinc using TEM, Get started by switching on the machine");
-    textToSpeech("Welcome, Get started by switching on the machine");
+    type("Welcome to Observation and interpretation of defect structure in cold rolled aluminium, copper and zinc using TEM. Get started by switching on the machine.");
+    textToSpeech("Welcome to Observation and interpretation of defect structure in cold rolled aluminium, copper and zinc using T E M. Get started by switching on the machine.");
 
     var vhandle = $("#vslider").find(".custom-handle");
     var avhandle = $("#avslider").find(".custom-handle");
@@ -130,31 +126,32 @@ $(function () {
     });
 
     //  acc voltage slider
-    $("#avslider").slider({
-        min: 100,
-        max: 102,
-        value: 100,
-        animate: "slow",
-        orientation: "horizontal",
-        disabled: true,
-        create: function () {
-            avhandle.text($(this).slider("value"));
-        },
-        slide: function (event, ui) {
-            if (ui.value == 100) {
-                avhandle.text("100");
-                ac = '100'
-            }
-            if (ui.value == 101) {
-                avhandle.text("120");
-                ac = '120'
-            }
-            if (ui.value == 102) {
-                avhandle.text("200");
-                ac = '200'
-            }
+  $("#avslider").slider({
+    min: 100,
+    max: 102,
+    value: 100,
+    animate: "slow",
+    disabled: true,
+    create: function () {
+        avhandle.text("100");
+        av = "100";
+    },
+    slide: function (event, ui) {
+        if (ui.value == 100) {
+            avhandle.text("100");
+            av = "100";
         }
-    });
+        if (ui.value == 101) {
+            avhandle.text("120");
+            av = "120";
+        }
+        if (ui.value == 102) {
+            avhandle.text("200");
+            av = "200";
+        }
+    }
+});
+
 
     // magnification slider
     $("#mslider").slider({
@@ -169,15 +166,15 @@ $(function () {
             switch (ui.value) {
                 case 0:
                     txt = "0";
-                    mag = '0'
+                    mag = '0';
                     break;
                 case 1:
                     txt = "L";
-                    mag = 'L'
+                    mag = 'L';
                     break;
                 case 2:
                     txt = "H";
-                    mag = 'H'
+                    mag = 'H';
                     break;
                 case 3:
                     txt = "VH";
@@ -204,8 +201,8 @@ $(function () {
 
     // Vacuum
     $("#setvac").click(function () {
-        type("Now set accelerating voltage");
-        textToSpeech("Now set the accelerating voltage");
+        type("Now set the accelerating voltage.");
+        textToSpeech("Now set the accelerating voltage.");
 
         $("#setav").prop("disabled", false);
         $("#avslider").slider("option", "disabled", false);
@@ -225,68 +222,94 @@ $(function () {
     });
 
     // acc voltage
-    $("#setav").click(function () {
+// acc voltage
+$("#setav").click(function () {
 
-        av = $("#avslider").slider("option", "value");
-        type("Now switch on the beam.");
+    av = $("#avslider").slider("option", "value");
+    type("Now switch on the beam.");
+    textToSpeech("Try to switch on the beam now.");
 
-        textToSpeech("Try to switch on the beam now.");
+    // Disable AV controls completely
+    $("#setav").prop("disabled", true);
+    $("#avslider").slider("disable");
 
-        $("#on").prop("disabled", false);
-        $("#setvac").prop("disabled", true);
-        $("#vslider").slider("option", "disabled", true);
+    // Enable next step
+    $("#on").prop("disabled", false);
+    $("#setvac").prop("disabled", true);
+    $("#vslider").slider("option", "disabled", true);
 
-        showToast("Switch on the beam");
-    });
+    showToast("Switch on the beam");
+});
+
 
     // magnification
-    $("#setmag").click(function () {
-        showToast("Magnification set");
-        type("Now you can see the output image.");
-        
-        mode = $(".imgMode option:selected").text();
-        // inp = $("#position :selected").val();
+ $("#setmag").click(function () {
 
-        url = "../images/outputs/" + av + mag + item + mode + ".jpg";
-                         
-            $("#outImage2").attr("src",url);
-            $("#outImage2").attr("alt", url);
+    showToast("Magnification set");
+    type("Now you can see the output image.");
+    textToSpeech("Now you can see the output image.");
 
-            $("#outImage1").attr("src",url);
-            $("#outImage1").attr("alt", url);
+    $("#setmag").prop("disabled", true);
+    $("#mslider").slider("disable");
+    $("#position").prop("disabled", true);
+    $("#on").prop("disabled", true);
 
-            $("#outImage3").attr("src",url);
-            $("#outImage3").attr("alt", url);
-    });
+    // Hide all first
+    $("#outImage1").hide();
+    $("#outImage2").hide();
+    $("#outImage3").hide();
 
-    // insert
+    // Show image based on material
+    if(item === "ceramic") {
+        $("#outImage1").show(500); // Copper
+    }
+    else if(item === "zebrafish") {
+        $("#outImage2").show(500); // Aluminium
+    }
+    else if(item === "metal") {
+        $("#outImage3").show(500); // Zinc
+    }
+});
+
+
+    // remove holder
     $("#removeButton").click(function () {
-        removeButtonclicked=true;
+        removeButtonclicked = true;
         $("#insertButton").prop("disabled", false);
         showToast("Insert the material");
-
+        type("Drag and drop the sample onto the holder, then click Insert.");
+        textToSpeech("Drag and drop the sample onto the holder, then click Insert.");
     });
 
+    // insert holder
     $("#insertButton").click(function () {
-        
-        if(isImageYDropped==true){
+
+        if (isImageYDropped == true) {
+            // Correct flow: sample already added, now insert & move to vacuum
             showToast("Set Vacuum");
-            setTimeout(function(){
-                $("#part11").css('visibility','visible');
-            },1500);
+            type("Now set the vacuum.");
+            textToSpeech("Now set the vacuum.");
+
+            setTimeout(function () {
+                $("#part11").css('visibility', 'visible');
+            }, 1500);
             $("#vslider").slider("option", "disabled", false);
             $("#setvac").prop("disabled", false);
-        }
-        else{
-            showToast("Please drag and drop sample before proceeding.",1)
+        } else {
+            // User forgot to drop sample
+            showToast("Please drag and drop sample before proceeding.", 1);
+            type("Please drag and drop the sample on the holder before inserting it.");
+            textToSpeech("Please drag and drop the sample on the holder before inserting it.");
         }
 
     });
 });
 
 // imaging mode selection
-function change(){
-    showToast("Set Magnificaton");
+function change() {
+    showToast("Set Magnification");
+    type("Set the magnification to view the image clearly.");
+    textToSpeech("Set the magnification to view the image clearly.");
     $("#setmag").prop("disabled", false);
     $("#mslider").slider("option", "disabled", false);
 }
@@ -324,7 +347,6 @@ function drawBeam() {
     ctx.lineTo(beamx + 1, beamy);
     ctx.stroke();
 
-
     ctx.shadowOffsetX = -beamWidth / 2;
     ctx.moveTo(beamx, beamy);
     ctx.lineTo(beamx + 1, beamy);
@@ -346,25 +368,25 @@ function drawBeam() {
         beamTimer2 = setInterval(drawBeam2, 100);
 
         $('#position').prop("disabled", false);
-        type("Set the imaging mode and magnification");
+        type("Set the imaging mode and magnification.");
         showToast("Set imaging mode");
 
-        if (item=="zebrafish") {
+        if (item == "zebrafish") {
             $('#outImage2').hide();
             $('#outImage3').hide();
             $('#outImage1').show(500);
-            showToast("Image 1 Generated successfully",2);
-        } else if(item=="metal"){
+            showToast("Image 1 Generated successfully", 2);
+        } else if (item == "metal") {
             $('#outImage1').hide();
             $('#outImage3').hide();
             $('#outImage2').show(500);
-            showToast("Image 2 Generated successfully",2);
+            showToast("Image 2 Generated successfully", 2);
         }
-        else if(item=="ceramic"){
+        else if (item == "ceramic") {
             $('#outImage1').hide();
             $('#outImage2').hide();
             $('#outImage3').show(500);
-            showToast("Image 3 Generated successfully",2);
+            showToast("Image 3 Generated successfully", 2);
         }
     }
 }
@@ -414,33 +436,35 @@ imageX.addEventListener("drop", (e) => {
     e.preventDefault();
     const draggedItem = e.dataTransfer.getData("text/plain");
 
-    if (draggedItem === "dragging-y" && isImageYDropped === false && removeButtonclicked== true) {
+    if (draggedItem === "dragging-y" && isImageYDropped === false && removeButtonclicked == true) {
         imageY.style.visibility = "hidden";
-        isImageYDropped = true; // Set the flag when image-_ is dropped
-        item = "zebrafish"
+        isImageYDropped = true; // Set the flag when image-y is dropped
+        item = "zebrafish";
         imageX.src = "../images/parts/sh1.png"; // Replace image X with image Z when any image is dropped onto it
         $("#insertButton").prop("disabled", false);
     }
-    else if (draggedItem === "dragging-a" && isImageYDropped === false && removeButtonclicked==true) {
+    else if (draggedItem === "dragging-a" && isImageYDropped === false && removeButtonclicked == true) {
         imageA.style.visibility = "hidden";
-        isImageYDropped = true; // Set the flag when image-_ is dropped
-        item = "metal"
+        isImageYDropped = true; // Set the flag when image-a is dropped
+        item = "metal";
         imageX.src = "../images/parts/sh2.png"; // Replace image X with image Z when any image is dropped onto it
         $("#insertButton").prop("disabled", false);
     }
-    else if (draggedItem === "dragging-b" && isImageYDropped === false && removeButtonclicked==true) {
+    else if (draggedItem === "dragging-b" && isImageYDropped === false && removeButtonclicked == true) {
         imageB.style.visibility = "hidden";
-        isImageYDropped = true; // Set the flag when image-_ is dropped
-        item = "ceramic"
+        isImageYDropped = true; // Set the flag when image-b is dropped
+        item = "ceramic";
         imageX.src = "../images/parts/sh3.png"; // Replace image X with image Z when any image is dropped onto it
         $("#insertButton").prop("disabled", false);
     }
-    else{
-        showToast("Please follow the instructions",1);
+    else {
+        showToast("Please follow the instructions", 1);
+        type("Please follow the correct order: remove the holder, then drag and drop the sample, then click Insert.");
+        textToSpeech("Please follow the correct order: remove the holder, then drag and drop the sample, then click Insert.");
     }
 });
 
 insertButton.addEventListener("click", () => {
-    imageX.style.transform = "translateX(0%)"; // Move image X back to its original position
+    // visual movement is handled in the jQuery click as logical step
+    imageX.style.transform = "translateX(0%)"; // Move image X back to its original position (if needed visually)
 });
-// sample and holder move end
