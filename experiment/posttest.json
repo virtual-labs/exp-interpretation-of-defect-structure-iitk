@@ -9,12 +9,6 @@
         "c": "Twinning leads to ring patterns.",
         "d": "Twinning causes the diffraction spots to shift in position."
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -26,11 +20,49 @@
         "c": "It enhances the intensity of the diffraction spots.",
         "d": "It does not affect the SADP at all."
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Cold rolling reduces grain size due to which mechanism?",
+      "answers": {
+        "a": "Dynamic recrystallization",
+        "b": "Grain boundary migration",
+        "c": "Mechanical twinning and dislocation interaction",
+        "d": "Electron beam irradiation"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a heavily cold-rolled FCC metal like copper, what happens to the diffraction spots in the SADP?",
+      "answers": {
+        "a": "They become broader and more diffuse due to increased defect density",
+        "b": "They remain sharp and well-defined",
+        "c": "They disappear completely",
+        "d": "They transform into concentric rings"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": ". Which factor influences the extent of defect formation in cold-rolled metals?",
+      "answers": {
+        "a": "Rolling temperature",
+        "b": "Rolling speed",
+        "c": "Initial grain size",
+        "d": "All of the above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is a common effect of severe cold rolling on the electrical conductivity of copper?",
+      "answers": {
+        "a": "Increases due to reduced impurity content",
+        "b": "Decreases due to increased defect density and electron scattering",
+        "c": "Remains unchanged",
+        "d": "Increases due to twin boundary formation"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"

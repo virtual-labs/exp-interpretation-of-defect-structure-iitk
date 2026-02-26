@@ -9,12 +9,6 @@
         "c": "The real-space lattice spacing of the crystal",
         "d": "The aperture size used in the TEM"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
@@ -25,12 +19,6 @@
         "b": "An amorphous material",
         "c": "A polycrystalline material",
         "d": "A non-crystalline structure"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -43,13 +31,51 @@
         "c": "Dislocations do not affect the SADP.",
         "d": "Dislocations cause spot splitting in the SADP."
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "In a TEM selected area diffraction pattern (SADP) of cold-rolled aluminum, what characteristic feature is most likely observed due to deformation?",
+      "answers": {
+        "a": "Sharp, well-defined diffraction spots",
+        "b": "Ring-like pattern indicating grain refinement",
+        "c": "Diffuse halos indicating an amorphous structure",
+        "d": "Single-crystal pattern"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "Cold rolling of face-centered cubic (FCC) metals like aluminum and copper often leads to which microstructural feature?",
+      "answers": {
+        "a": "Increased dislocation density",
+        "b": "Formation of brittle phases",
+        "c": "Increase in long-range order",
+        "d": "Complete amorphization"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "Which metal among aluminum, copper, and zinc is most likely to exhibit extensive twinning upon cold rolling?",
+      "answers": {
+        "a": "Aluminum",
+        "b": "Copper",
+        "c": "Zinc",
+        "d": "None of the above"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "Why does zinc show a greater tendency for deformation twinning compared to aluminum and copper?",
+      "answers": {
+        "a": "Due to its hexagonal close-packed (HCP) crystal structure",
+        "b": "Due to its face-centered cubic (FCC) structure",
+        "c": "Due to the presence of grain boundary precipitates",
+        "d": "Due to a high stacking fault energy"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
