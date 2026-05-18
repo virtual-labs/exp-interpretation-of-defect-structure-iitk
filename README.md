@@ -21,3 +21,5 @@ How to observe defect structures and interpretation of them using bright field, 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 | Praveen Chauhan | Student | Computer Science | BU Jhansi | sudarshanrajpit2002@gmail.com
+2 | Rahul Mitra | Student | MSE  |  IIT Kanpur | rmitra@iitk.ac.in
+3 | Khushboo Singh | MSE |  Employee |  IIT Kanpur | skhushboo@iitk.ac.in
