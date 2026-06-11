@@ -34,48 +34,47 @@
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
-        {
-      "question": "In a TEM selected area diffraction pattern (SADP) of cold-rolled aluminum, what characteristic feature is most likely observed due to deformation?",
+    {
+      "question": "Which factor influences the extent of defect formation in cold-rolled metals?  ",
       "answers": {
-        "a": "Sharp, well-defined diffraction spots",
-        "b": "Ring-like pattern indicating grain refinement",
-        "c": "Diffuse halos indicating an amorphous structure",
-        "d": "Single-crystal pattern"
+        "a": "Rolling temperature",
+        "b": "Rolling speed ",
+        "c": "Initial grain size ",
+        "d": "All of the above "
+      },
+      "correctAnswer": "d ",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is a common effect of severe cold rolling on the electrical conductivity of copper?",
+      "answers": {
+        "a": "Increases due to reduced impurity content",
+        "b": "Decreases due to increased defect density and electron scattering",
+        "c": "Remains unchanged",
+        "d": "Increases due to twin boundary formation"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
-        {
-      "question": "Cold rolling of face-centered cubic (FCC) metals like aluminum and copper often leads to which microstructural feature?",
+    {
+      "question": "A dislocation has Burgers vector b = (a/2)[110] and is imaged using diffraction vector g = 1̅11, what is expected? ",
       "answers": {
-        "a": "Increased dislocation density",
-        "b": "Formation of brittle phases",
-        "c": "Increase in long-range order",
-        "d": "Complete amorphization"
+        "a": "Strong contrast",
+        "b": "No contrast ",
+        "c": "Twin contrast ",
+        "d": "Stacking-fault contrast "
       },
-      "correctAnswer": "a",
+      "correctAnswer": "B",
       "difficulty": "beginner"
-    },
-        {
-      "question": "Which metal among aluminum, copper, and zinc is most likely to exhibit extensive twinning upon cold rolling?",
+    }, {
+      "question": "Why does WBDF provide higher defect resolution than conventional DF imaging? ",
       "answers": {
-        "a": "Aluminum",
-        "b": "Copper",
-        "c": "Zinc",
-        "d": "None of the above"
+        "a": "It increases specimen thickness.",
+        "b": "It suppresses strain contrast.",
+        "c": "It enhances sensitivity to local lattice distortions.",
+        "d": "It removes diffraction effects."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-        {
-      "question": "Why does zinc show a greater tendency for deformation twinning compared to aluminum and copper?",
-      "answers": {
-        "a": "Due to its hexagonal close-packed (HCP) crystal structure",
-        "b": "Due to its face-centered cubic (FCC) structure",
-        "c": "Due to the presence of grain boundary precipitates",
-        "d": "Due to a high stacking fault energy"
-      },
-      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
