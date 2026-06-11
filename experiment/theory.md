@@ -59,7 +59,7 @@ where:<br>
 •	t = foil thickness 
 
 <b>•    Worked Examples of Contrast Variation </b><br>
-<b>Example 1: g·b Invisibility<b><br><br>
+<b>Example 1: g·b Invisibility</b><br><br>
 
 Suppose:<br>
 b = (a/2)[110]<br><br>
