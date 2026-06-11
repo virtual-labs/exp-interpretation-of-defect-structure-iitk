@@ -86,16 +86,16 @@ g ⋅ b ≠ 0<br><br>
 The dislocation becomes visible.<br>
 This demonstrates why changing diffraction conditions changes contrast.<br><br>
 
-<b>Example 1: Bragg Condition Sensitivity<b><br><br>
+<b>Example 1: Bragg Condition Sensitivity</b><br><br>
 
 Consider a dislocation surrounded by strain fields.<br>
-<b>Exact Bragg Condition<b><br>
+<b>Exact Bragg Condition</b><br>
 s = 0 <br><br>
 
 Strong diffraction occurs.<br>
 The dislocation appears with broad contrast.<br><br>
 
-<b>Weak Beam Condition<b><br>
+<b>Weak Beam Condition</b><br>
 
 s ≠ 0<br><br>
 
