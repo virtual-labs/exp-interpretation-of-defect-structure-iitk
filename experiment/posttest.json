@@ -56,16 +56,61 @@
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
-    {
-      "question": "What is a common effect of severe cold rolling on the electrical conductivity of copper?",
+      {
+      "question": "In a TEM selected area diffraction pattern (SADP) of cold-rolled aluminum, what characteristic feature is most likely observed due to deformation?",
       "answers": {
-        "a": "Increases due to reduced impurity content",
-        "b": "Decreases due to increased defect density and electron scattering",
-        "c": "Remains unchanged",
-        "d": "Increases due to twin boundary formation"
+        "a": "Sharp, well-defined diffraction spots",
+        "b": "Ring-like pattern indicating grain refinement",
+        "c": "Diffuse halos indicating an amorphous structure",
+        "d": "Single-crystal pattern"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
-    }
+    },
+     {
+      "question": "Cold rolling of face-centered cubic (FCC) metals like aluminum and copper often leads to which microstructural feature?",
+      "answers": {
+        "a": "Increased dislocation density",
+        "b": "Formation of brittle phases",
+        "c": "Increase in long-range order",
+        "d": "Complete amorphization"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+        
+        {
+      "question": "Which metal among aluminum, copper, and zinc is most likely to exhibit extensive twinning upon cold rolling?",
+      "answers": {
+        "a": "Aluminum",
+        "b": "Copper",
+        "c": "Zinc",
+        "d": "None of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "Why does zinc show a greater tendency for deformation twinning compared to aluminum and copper?",
+      "answers": {
+        "a": "Due to its hexagonal close-packed (HCP) crystal structure",
+        "b": "Due to its face-centered cubic (FCC) structure",
+        "c": "Due to the presence of grain boundary precipitates",
+        "d": "Due to a high stacking fault energy"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "Cold rolling reduces grain size due to which mechanism",
+      "answers": {
+        "a": "Dynamic recrystallization",
+        "b": "Grain boundary migration",
+        "c": "Mechanical twinning and dislocation interaction",
+        "d": "Electron beam irradiation"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    } 
   ]
 }

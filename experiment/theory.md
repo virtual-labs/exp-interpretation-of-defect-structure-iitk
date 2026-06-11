@@ -23,3 +23,88 @@ This often reflects in the selected area diffraction pattern, as the presence of
 **Figure 2.** (a) Bright field TEM images of strangled dislocations (b) Defect structures in Cu (c) Defect structures in Fe (d) Defect structures in Zn<br>
 
 Figure 2(a) shows a dislocation entanglement in an Al sample observed in TEM bright field mode. Figure 2(b) shows elongated grains corresponding to cold rolled Cu sample. Figure 2(c) shows TEM-bright field image of dislocation gliding in BCC-Iron sample. Bright field image of dislocations in a Zn sample is presented in Figure 2(d).
+
+<b>Quantitative Defect Analysis</b><br><br>
+
+Examples include:<br>
+<b>•	Dislocation Density :</b><br>
+ρ = L/V <br><br>
+
+where:<br>
+•	ρ = dislocation density(m<sup>2</sup>)<br>
+•	L= total dislocation length <br>
+•	V= sampled volume <br><br>
+
+or practically:<br>
+ρ ≈ N/At <br><br>
+
+where:<br>
+•	N = number of dislocation intersections 
+•	A = image area 
+•	t = foil thickness 
+
+<b>•	Stacking Fault Width </b><br>
+Measured directly from WBDF images: <br>
+γ<sub>SF</sub> ∝ 1/d<sub>SF</sub><br><br>
+
+where larger separation of partial dislocations generally indicates lower stacking-fault energy.<br><br>
+
+<b>•    Precipitate Size and Number Density </b><br>
+Using DF images: <br>
+N<sub>V</sub> = N<sub>A</sub>/t<br><br>
+
+where:<br>
+•	N<sub>V</sub> = number of dislocation intersections 
+•	N<sub>A</sub> = image area 
+•	t = foil thickness 
+
+<b>•    Worked Examples of Contrast Variation </b><br>
+<b>Example 1: g·b Invisibility<b><br><br>
+
+Suppose:<br>
+b = (a/2)[110]<br><br>
+
+and imaginig is performaed using:<br>
+g = (1̅11)<br><br>
+
+Then: <br>
+g ⋅ b = (1)(1) + (-1)(1) + (1)(0) = 0<br><br>
+
+Therefore:<br>
+g ⋅ b = 0<br>
+
+The dislocation becomes invisible.<br>
+Now choose <br>
+g = (220) <br><br>
+
+Then<br>
+g ⋅ b = 2(1) + 2(1) + 0 = 4<br><br>
+
+Therefore:<br>
+g ⋅ b ≠ 0<br><br>
+
+The dislocation becomes visible.<br>
+This demonstrates why changing diffraction conditions changes contrast.<br><br>
+
+<b>Example 1: Bragg Condition Sensitivity<b><br><br>
+
+Consider a dislocation surrounded by strain fields.<br>
+<b>Exact Bragg Condition<b><br>
+s = 0 <br><br>
+
+Strong diffraction occurs.<br>
+The dislocation appears with broad contrast.<br><br>
+
+<b>Weak Beam Condition<b><br>
+
+s ≠ 0<br><br>
+
+using g + 3g<br>
+Only highly strained regions satisfy diffraction.<br><br>
+
+Result:<br>
+•	sharper dislocation image <br>
+•	narrower contrast width <br>
+•	improved spatial resolution<br>
+
+
