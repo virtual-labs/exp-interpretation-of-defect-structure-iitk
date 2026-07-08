@@ -23,15 +23,15 @@
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
-    {
-      "question": "Cold rolling reduces grain size due to which mechanism?",
+       {
+      "question": "Cold rolling of face-centered cubic (FCC) metals like aluminum and copper often leads to which microstructural feature?",
       "answers": {
-        "a": "Dynamic recrystallization",
-        "b": "Grain boundary migration",
-        "c": "Mechanical twinning and dislocation interaction",
-        "d": "Electron beam irradiation"
+        "a": "Increased dislocation density",
+        "b": "Formation of brittle phases",
+        "c": "Increase in long-range order",
+        "d": "Complete amorphization"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
