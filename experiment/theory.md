@@ -1,1 +1,110 @@
-### Link your theory in here
+In transmission electron microscopy, contrast is generated due to differences in electron densities in the image plane, which can be caused by different microscopic features inside the sample. Due to the scattering of the incident beam by the sample features, different types of contrast such as amplitude contrast, phase contrast, and diffraction contrast are produced. Diffraction contrast occurs because of a grain’s specific crystallographic orientation. In this case, the crystal is oriented in a way that increases the likelihood of diffraction. Diffraction contrast reveals information about the orientation of crystals in a polycrystalline sample, as well as other details such as defects.<br><br>
+
+Diffraction contrast is exhibited when electrons are diffracted from the sample and are dispersed into distinct locations in the back focal plane as a result of diffraction of the electron beam. The intended reciprocal lattice vectors (g) can be chosen or excluded by positioning apertures in the back focal plane, or the objective aperture. As a result, only the portions of the sample that are causing the electrons to scatter to the chosen reflections are projected onto the imaging device. It is possible to ascertain not only the location of defects but also their type by carefully choosing the orientation of the sample.<br><br>
+
+Any distortion of the crystal plane that locally tilts the plane towards the Bragg angle will result in particularly strong contrast variations if the sample is oriented so that one specific plane is only slightly tilted away from the strongest diffracting angle (referred to as the Bragg angle). Weaker contrast results from defects that only cause atoms to move in directions parallel to the crystal plane, which do not tilt the crystal towards the Bragg angle. Under kinematic bright-field conditions, where the Bragg condition is met almost but not quite, the dislocation is imaged as a dark line on a bright background.<br><br>
+
+The magnitude of the contrast depends on the scalar product between the reciprocal lattice vector g and the Burgers vector b, g · b. Dislocations are invisible or exhibit only weak contrast if g · b = 0.<br><br>
+
+Additionally, internal structural defects of deformed parts, which are primarily microscopic and involve the deformed microstructure of materials, can provide a lot of information about deformation mechanisms that are directly related to the properties and performance of materials. In a deformed specimen, several defect structures can be observed, such as perfect and partial dislocations, twins, dislocation loops, and deformed grains.<br><br>
+
+In order to observe the defect structure, a combination of bright-field imaging and dark-field imaging is used. As the electron beam passes through the deformed specimen, some part of the beam is heavily diffracted due to the presence of these defects and hence appears with dark contrast. As dislocation motion becomes active during deformation, regions with dark contrast can be observed in the micrograph. This dark contrast region may represent strangled dislocations or dislocation loops.<br><br>
+
+This often reflects in the selected area diffraction pattern, as the presence of dislocations alters the shape of the diffraction spots. The diffraction spots may become elongated or stretched, or sometimes double-diffraction spots can also be observed if twins are present.<br>
+<image src="images\Picture1.png">
+<br>
+
+**Figure 1.** Imaging conditions for dislocations with maximum and minimum gb product.
+<br>
+
+<image src="images\Picture2.png">
+<br>
+
+**Figure 2.** (a) Bright field TEM images of strangled dislocations (b) Defect structures in Cu (c) Defect structures in Fe (d) Defect structures in Zn<br>
+
+Figure 2(a) shows a dislocation entanglement in an Al sample observed in TEM bright field mode. Figure 2(b) shows elongated grains corresponding to cold rolled Cu sample. Figure 2(c) shows TEM-bright field image of dislocation gliding in BCC-Iron sample. Bright field image of dislocations in a Zn sample is presented in Figure 2(d).
+
+<b>Quantitative Defect Analysis</b><br><br>
+
+Examples include:<br>
+<b>•	Dislocation Density :</b><br>
+ρ = L/V <br><br>
+
+where:<br>
+•	ρ = dislocation density(m<sup>2</sup>)<br>
+•	L= total dislocation length <br>
+•	V= sampled volume <br><br>
+
+or practically:<br>
+ρ ≈ N/At <br><br>
+
+where:<br>
+•	N = number of dislocation intersections 
+•	A = image area 
+•	t = foil thickness 
+
+<b>•	Stacking Fault Width </b><br>
+Measured directly from WBDF images: <br>
+γ<sub>SF</sub> ∝ 1/d<sub>SF</sub><br><br>
+
+where larger separation of partial dislocations generally indicates lower stacking-fault energy.<br><br>
+
+<b>•    Precipitate Size and Number Density </b><br>
+Using DF images: <br>
+N<sub>V</sub> = N<sub>A</sub>/t<br><br>
+
+where:<br>
+•	N<sub>V</sub> = number of dislocation intersections 
+•	N<sub>A</sub> = image area 
+•	t = foil thickness 
+
+<b>•    Worked Examples of Contrast Variation </b><br>
+<b>Example 1: g·b Invisibility</b><br><br>
+
+Suppose:<br>
+b = (a/2)[110]<br><br>
+
+and imaginig is performaed using:<br>
+g = (1̅11)<br><br>
+
+Then: <br>
+g ⋅ b = (1)(1) + (-1)(1) + (1)(0) = 0<br><br>
+
+Therefore:<br>
+g ⋅ b = 0<br>
+
+The dislocation becomes invisible.<br>
+Now choose <br>
+g = (220) <br><br>
+
+Then<br>
+g ⋅ b = 2(1) + 2(1) + 0 = 4<br><br>
+
+Therefore:<br>
+g ⋅ b ≠ 0<br><br>
+
+The dislocation becomes visible.<br>
+This demonstrates why changing diffraction conditions changes contrast.<br><br>
+
+<b>Example 1: Bragg Condition Sensitivity</b><br><br>
+
+Consider a dislocation surrounded by strain fields.<br>
+<b>Exact Bragg Condition</b><br>
+s = 0 <br><br>
+
+Strong diffraction occurs.<br>
+The dislocation appears with broad contrast.<br><br>
+
+<b>Weak Beam Condition</b><br>
+
+s ≠ 0<br><br>
+
+using g + 3g<br>
+Only highly strained regions satisfy diffraction.<br><br>
+
+Result:<br>
+•	sharper dislocation image <br>
+•	narrower contrast width <br>
+•	improved spatial resolution<br>
+
+
