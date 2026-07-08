@@ -45,17 +45,7 @@
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-    {
-      "question": ". Which factor influences the extent of defect formation in cold-rolled metals?",
-      "answers": {
-        "a": "Rolling temperature",
-        "b": "Rolling speed",
-        "c": "Initial grain size",
-        "d": "All of the above"
-      },
-      "correctAnswer": "d",
-      "difficulty": "beginner"
-    },
+  
       {
       "question": "In a TEM selected area diffraction pattern (SADP) of cold-rolled aluminum, what characteristic feature is most likely observed due to deformation?",
       "answers": {
