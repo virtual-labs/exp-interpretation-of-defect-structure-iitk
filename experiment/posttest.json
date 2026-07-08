@@ -57,17 +57,6 @@
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
-     {
-      "question": "Cold rolling of face-centered cubic (FCC) metals like aluminum and copper often leads to which microstructural feature?",
-      "answers": {
-        "a": "Increased dislocation density",
-        "b": "Formation of brittle phases",
-        "c": "Increase in long-range order",
-        "d": "Complete amorphization"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
         
         {
       "question": "Which metal among aluminum, copper, and zinc is most likely to exhibit extensive twinning upon cold rolling?",
