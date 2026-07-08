@@ -1,0 +1,81 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The distance between diffraction spots in a SADP is inversely related to:",
+      "answers": {
+        "a": "The wavelength of the incident electron beam",
+        "b": "The atomic number of the elements in the sample",
+        "c": "The real-space lattice spacing of the crystal",
+        "d": "The aperture size used in the TEM"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the presence of concentric rings in a SADP indicate?",
+      "answers": {
+        "a": "A single crystalline structure",
+        "b": "An amorphous material",
+        "c": "A polycrystalline material",
+        "d": "A non-crystalline structure"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following statements is true about the effect of dislocations on TEM SADP?",
+      "answers": {
+        "a": "Dislocations lead to the broadening of diffraction spots.",
+        "b": "Dislocations result in the formation of ring patterns.",
+        "c": "Dislocations do not affect the SADP.",
+        "d": "Dislocations cause spot splitting in the SADP."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which factor influences the extent of defect formation in cold-rolled metals?  ",
+      "answers": {
+        "a": "Rolling temperature",
+        "b": "Rolling speed ",
+        "c": "Initial grain size ",
+        "d": "All of the above "
+      },
+      "correctAnswer": "d ",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is a common effect of severe cold rolling on the electrical conductivity of copper?",
+      "answers": {
+        "a": "Increases due to reduced impurity content",
+        "b": "Decreases due to increased defect density and electron scattering",
+        "c": "Remains unchanged",
+        "d": "Increases due to twin boundary formation"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A dislocation has Burgers vector b = (a/2)[110] and is imaged using diffraction vector g = 1̅11, what is expected? ",
+      "answers": {
+        "a": "Strong contrast",
+        "b": "No contrast ",
+        "c": "Twin contrast ",
+        "d": "Stacking-fault contrast "
+      },
+      "correctAnswer": "B",
+      "difficulty": "beginner"
+    }, {
+      "question": "Why does WBDF provide higher defect resolution than conventional DF imaging? ",
+      "answers": {
+        "a": "It increases specimen thickness.",
+        "b": "It suppresses strain contrast.",
+        "c": "It enhances sensitivity to local lattice distortions.",
+        "d": "It removes diffraction effects."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

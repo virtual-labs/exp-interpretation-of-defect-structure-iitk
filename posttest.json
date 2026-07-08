@@ -1,0 +1,95 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Twinning in crystals can cause which of the following effects on the SADP in TEM?",
+      "answers": {
+        "a": "Twinning does not affect the SADP.",
+        "b": "Twinning can result in double diffraction spots.",
+        "c": "Twinning leads to ring patterns.",
+        "d": "Twinning causes the diffraction spots to shift in position."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How does the presence of amorphous regions in a crystalline material affect the SADP observed in TEM?",
+      "answers": {
+        "a": "It causes the diffraction spots to become sharper.",
+        "b": "It leads to the appearance of a halo or diffuse ring.",
+        "c": "It enhances the intensity of the diffraction spots.",
+        "d": "It does not affect the SADP at all."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+       {
+      "question": "Cold rolling of face-centered cubic (FCC) metals like aluminum and copper often leads to which microstructural feature?",
+      "answers": {
+        "a": "Increased dislocation density",
+        "b": "Formation of brittle phases",
+        "c": "Increase in long-range order",
+        "d": "Complete amorphization"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a heavily cold-rolled FCC metal like copper, what happens to the diffraction spots in the SADP?",
+      "answers": {
+        "a": "They become broader and more diffuse due to increased defect density",
+        "b": "They remain sharp and well-defined",
+        "c": "They disappear completely",
+        "d": "They transform into concentric rings"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+  
+      {
+      "question": "In a TEM selected area diffraction pattern (SADP) of cold-rolled aluminum, what characteristic feature is most likely observed due to deformation?",
+      "answers": {
+        "a": "Sharp, well-defined diffraction spots",
+        "b": "Ring-like pattern indicating grain refinement",
+        "c": "Diffuse halos indicating an amorphous structure",
+        "d": "Single-crystal pattern"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+        
+        {
+      "question": "Which metal among aluminum, copper, and zinc is most likely to exhibit extensive twinning upon cold rolling?",
+      "answers": {
+        "a": "Aluminum",
+        "b": "Copper",
+        "c": "Zinc",
+        "d": "None of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "Why does zinc show a greater tendency for deformation twinning compared to aluminum and copper?",
+      "answers": {
+        "a": "Due to its hexagonal close-packed (HCP) crystal structure",
+        "b": "Due to its face-centered cubic (FCC) structure",
+        "c": "Due to the presence of grain boundary precipitates",
+        "d": "Due to a high stacking fault energy"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "Cold rolling reduces grain size due to which mechanism",
+      "answers": {
+        "a": "Dynamic recrystallization",
+        "b": "Grain boundary migration",
+        "c": "Mechanical twinning and dislocation interaction",
+        "d": "Electron beam irradiation"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    } 
+  ]
+}
